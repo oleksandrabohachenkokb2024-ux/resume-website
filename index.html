@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Богаченко Олександра</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <button id="theme-toggle" class="theme-btn">Змінити тему</button>
+
+        <div class="circle-accent"></div>
+        <div class="circle-small"></div>
+        <div class="circle-bottom"></div>
+
+        <header>
+            <h1>Богаченко Олександра</h1>
+            <div class="contact-info">
+                <p><b>Місто:</b> Львів</p>
+                <p><b>Email:</b> <a href="mailto:oleksandra.bohachenko.kb.2024@lpnu.ua">oleksandra.bohachenko.kb.2024@lpnu.ua</a></p>
+                <p><b>GitHub:</b> <a href="https://github.com/oleksandrabohachenkokb2024-ux?tab=repositories" target="_blank">Мій профіль</a></p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Про себе</h2>
+            <p>Опановую фундамент IT та роблю перші впевнені кроки до кар'єри у техсфері через системне навчання. Сфокусована на розвитку в галузі кібербезпеки та веб-технологій.</p>
+        </section>
+
+        <div class="content-grid">
+            <section class="column">
+                <h2>Освіта</h2>
+                <ul>
+                    <li><strong>Навчальний заклад:</strong> НУ "Львівська політехніка"</li>
+                    <li><strong>Спеціальність:</strong> Кібербезпека та захист інформації</li>
+                    <li><strong>Курс:</strong> Другий</li>
+                </ul>
+            </section>
+
+            <section class="column">
+                <h2>Технічні навички</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML / CSS</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                </ul>
+            </section>
+        </div>
+
+        <section>
+            <h2>Досвід та проєкти</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Назва проєкту</th>
+                        <th>Опис та технології</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Сайт для купівлі квитків</td>
+                        <td>Робота з базами даних та менеджмент процесів.</td>
+                    </tr>
+                    <tr>
+                        <td>Додаток "Guide"</td>
+                        <td>Спеціалізоване рішення для людей з обмеженими можливостями.</td>
+                    </tr>
+                    <tr>
+                        <td>Міні-проєкти</td>
+                        <td>Калькулятори, логічні ігри та дрібні застосунки.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Додаткова інформація</h2>
+            <ul>
+                <li>
+                    <strong>Сертифікат Prometheus:</strong> "Безпека в інтернеті під час війни: практичний курс"
+                </li>
+                <li>Досвід навчання в онлайн-школі <strong>GoIT</strong>.</li>
+            </ul>
+        </section>
+
+        <section id="reviews-section">
+            <h2>Відгуки роботодавців</h2>
+            <div id="comments-container">Завантаження коментарів...</div>
+        </section>
+
+        <footer class="site-footer">
+            <p id="storage-info"></p>
+        </footer>
+    </main>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <h3>Зворотній зв'язок</h3>
+            <p>Ви перебуваєте на сайті вже 1 хвилину. Залиште свої контакти!</p>
+            
+            <form action="https://formspree.io/f/meerwbeq" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону" required>
+                <textarea name="message" placeholder="Ваше повідомлення" rows="4" required></textarea>
+                
+                <div class="modal-buttons">
+                    <button type="submit" class="submit-btn">Відправити</button>
+                    <button type="button" id="close-modal" class="close-btn">Закрити</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
